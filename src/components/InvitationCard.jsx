@@ -2,57 +2,20 @@ import { motion } from "framer-motion";
 
 export default function InvitationCard() {
   return (
-    <section className="py-12 px-4 bg-gradient-to-b from-black to-gray-800">
-      <div className="max-w-xl mx-auto bg-gray-900 rounded-3xl shadow-2xl p-8 border border-gray-700 text-center">
-        <motion.h2
-          className="text-sm tracking-widest text-gray-400 uppercase"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          You Are Cordially Invited To The Wedding Of
-        </motion.h2>
-
-        <motion.h1
-          className="text-5xl font-[Great Vibes] text-white mt-4"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 1 }}
-        >
-          Suraj & Rutuja
-        </motion.h1>
-
-        <motion.p
-          className="mt-4 text-gray-300 italic"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7, duration: 1 }}
-        >
-          Join us for a celebration of love, family, and forever.
-        </motion.p>
-
-        <div className="mt-6 text-gray-200">
-          <p className="text-lg font-semibold">📅 May 16, 2025</p>
-          <p className="text-sm text-gray-400 mt-1">Friday, 12:31 PM</p>
-          <p className="mt-4">💒 Shree Mahalakshmi Mandir, Holl Mohi, Taluka: Man, District: Satara </p>    
-          <br /><br />
-          <a href="https://www.google.com/maps/dir//QMWG%2BMWJ+Mahalaxmi+Temple,+Mohi,+Maharashtra+415508/@17.8105393,74.6620912,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bc3eb5c8c74c32d:0xc92a078f74e41433!2m2!1d74.6772614!2d17.7967133?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-          <i className="fas fa-map-marker-alt"></i> {/* Location Icon */}
-        </a>
-              </div>
-
-        {/* Invitation Image */}
+    <section className="py-12 px-4 bg-gradient-to-b from-gray-800 to-black">
+      <div className="max-w-2xl mx-auto">
+        {/* Placeholder for invitation image */}
         <motion.div
           className="mt-8"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 1, duration: 1.2, ease: "easeInOut" }}
+          transition={{ delay: 0.3, duration: 1.2, ease: "easeInOut" }}
         >
-          <img
-            src="/images/invitatin.png" // Ensure the path is correct
-            alt="Wedding Invitation"
-            className="w-full rounded-xl shadow-xl transform transition-all"
-          />
+          <div className="w-full bg-gradient-to-br from-pink-900 to-gray-900 rounded-xl shadow-2xl p-12 text-center text-white border-2 border-pink-500">
+            <h2 className="text-3xl font-[Great Vibes] text-pink-300 mb-4">Wedding Invitation</h2>
+            <p className="text-gray-300 mb-4">Image coming soon!</p>
+            <p className="text-sm text-gray-400">You are invited to celebrate our special day</p>
+          </div>
         </motion.div>
       </div>
     </section>
