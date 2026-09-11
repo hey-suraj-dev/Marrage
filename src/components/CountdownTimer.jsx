@@ -33,7 +33,7 @@ export default function CountdownTimer() {
   return (
     <section className="py-10 text-center bg-gradient-to-b from-black via-gray-900 to-black">
       <motion.h2
-        className="text-4xl sm:text-5xl font-[Great Vibes] text-pink-400 mb-4"
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[Great Vibes] text-pink-400 mb-4 px-2"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -42,7 +42,7 @@ export default function CountdownTimer() {
       </motion.h2>
 
       <motion.div
-        className="flex justify-center gap-6 text-white text-3xl font-bold font-mono"
+        className="flex justify-center gap-2 sm:gap-4 text-white text-lg sm:text-2xl md:text-3xl font-bold font-mono px-2 flex-wrap"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
@@ -58,9 +58,9 @@ export default function CountdownTimer() {
 
 function TimeBox({ label, value }) {
   return (
-    <div className="bg-rose-600 bg-opacity-20 px-4 py-2 rounded-xl shadow-lg backdrop-blur-md border border-pink-300">
-      <div className="text-4xl text-pink-300 glow">{value}</div>
-      <div className="text-sm mt-1 text-gray-300 uppercase">{label}</div>
+    <div className="bg-rose-600 bg-opacity-20 px-2 sm:px-4 py-2 rounded-lg sm:rounded-xl shadow-lg backdrop-blur-md border border-pink-300">
+      <div className="text-xl sm:text-3xl md:text-4xl text-pink-300 glow">{value}</div>
+      <div className="text-xs sm:text-sm mt-1 text-gray-300 uppercase">{label}</div>
     </div>
   );
 }
